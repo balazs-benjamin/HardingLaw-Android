@@ -1,10 +1,15 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="actionBarSize">65dip</item>
-        <item name="android:actionBarSize">65dip</item>
+    </style>
+
+    <style name="ActionBar" parent="@style/Base.Theme.AppCompat.Light">
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetEnd">0dp</item>
+        <item name="contentInsetStartWithNavigation">0dp</item>
     </style>
 
 </resources>

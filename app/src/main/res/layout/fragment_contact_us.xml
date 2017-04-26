@@ -1,0 +1,223 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactUsFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@android:color/black"
+            android:gravity="center"
+            android:text="Contact Us"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/imageButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@android:color/transparent"
+                            app:srcCompat="@drawable/btn_call_attorney" />
+
+                        <Button
+                            android:id="@+id/button1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="15dp"
+                            android:background="@android:color/transparent"
+                            android:gravity="left|center_vertical"
+                            android:text="Call an Attorney"
+                            android:textAlignment="gravity"
+                            android:textColor="@android:color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="40dp"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/imageButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@android:color/transparent"
+                            app:srcCompat="@drawable/btn_email" />
+
+                        <Button
+                            android:id="@+id/button2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="15dp"
+                            android:background="@android:color/transparent"
+                            android:gravity="left|center_vertical"
+                            android:text="Email Us"
+                            android:textAlignment="gravity"
+                            android:textColor="@android:color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="40dp"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/imageButton3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@android:color/transparent"
+                            app:srcCompat="@drawable/btn_chat" />
+
+                        <Button
+                            android:id="@+id/button3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="15dp"
+                            android:background="@android:color/transparent"
+                            android:gravity="left|center_vertical"
+                            android:text="Chat Live"
+                            android:textAlignment="gravity"
+                            android:textColor="@android:color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="40dp"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/imageButton4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@android:color/transparent"
+                            app:srcCompat="@drawable/btn_location" />
+
+                        <Button
+                            android:id="@+id/button4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="15dp"
+                            android:background="@android:color/transparent"
+                            android:gravity="left|center_vertical"
+                            android:text="Attorney Locations"
+                            android:textAlignment="gravity"
+                            android:textColor="@android:color/white" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp">
+
+                        <TextView
+                            android:id="@+id/tvPhone1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="40dp"
+                            android:lineSpacingExtra="10sp"
+                            android:text="Phone: 303 762 9500/"
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:id="@+id/tvPhone2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/tvPhone1"
+                            android:lineSpacingExtra="10sp"
+                            android:text="1800 878 7888"
+                            android:textColor="@android:color/white" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tvPhil"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="10dp"
+                        android:lineSpacingExtra="10sp"
+                        android:text="Phil Harding: phil@hlaw.org"
+                        android:textColor="@android:color/white" />
+                    <TextView
+                        android:id="@+id/tvLisa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="10dp"
+                        android:lineSpacingExtra="10sp"
+                        android:text="Lisa Botkin: lisa@hlaw.org"
+                        android:textColor="@android:color/white" />
+                    <TextView
+                        android:id="@+id/tvKim"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="10dp"
+                        android:lineSpacingExtra="10sp"
+                        android:text="KimCressman: kim@hlaw.org"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/tvJeff"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="100dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="10dp"
+                        android:lineSpacingExtra="10sp"
+                        android:text="Jeff Kelly: jeff@hlaw.org"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+</FrameLayout>

@@ -5,22 +5,22 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     android:orientation="vertical"
-    tools:context="hardinglaw.dcmmoguls.com.hardinglaw.MainActivity">
+    tools:context="com.dcmmoguls.hardinglaw.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_gravity="top"
+        android:background="@drawable/logo" />
 
     <FrameLayout
         android:id="@+id/content"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="fitXY"
-            app:srcCompat="@drawable/background" />
-    </FrameLayout>
+        android:layout_weight="1"></FrameLayout>
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation"
@@ -28,8 +28,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:background="#fe696c"
+        app:itemIconTint="#ffffff"
         app:itemTextColor="#ffffff"
-        app:itemIconTint = "#ffffff"
         app:menu="@menu/navigation" />
 
 </LinearLayout>

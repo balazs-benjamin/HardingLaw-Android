@@ -1,13 +1,96 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="layout.MainFragment">
+    tools:context=".MainFragment"
+    android:background="@android:color/transparent">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="60dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:weightSum="3">
+
+            <ImageButton
+                android:id="@+id/btnHowtoUse"
+                android:layout_width="wrap_content"
+                android:layout_height="0px"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn1" />
+
+            <ImageButton
+                android:id="@+id/btnEmergency"
+                android:layout_width="wrap_content"
+                android:layout_height="0px"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn3" />
+
+            <ImageButton
+                android:id="@+id/btnVerdicts"
+                android:layout_width="wrap_content"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:weightSum="3">
+
+            <ImageButton
+                android:id="@+id/btnReport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn2" />
+
+            <ImageButton
+                android:id="@+id/btnCallPhil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn4" />
+
+            <ImageButton
+                android:id="@+id/btnVisit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn6" />
+        </LinearLayout>
+    </LinearLayout>
 
 </FrameLayout>

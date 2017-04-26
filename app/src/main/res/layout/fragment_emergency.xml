@@ -1,0 +1,70 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmergencyFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/btnPolice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="30dp"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/btn_police" />
+
+        <ImageButton
+            android:id="@+id/btnTruck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/btn_truck" />
+
+        <ImageButton
+            android:id="@+id/btnRepair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/btn_repair" />
+
+        <ImageButton
+            android:id="@+id/btnHospital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/btn_hospital" />
+
+        <ImageButton
+            android:id="@+id/btnTaxi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/btn_taxi" />
+
+        <ImageButton
+            android:id="@+id/btnCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/btn_call" />
+    </LinearLayout>
+</FrameLayout>
