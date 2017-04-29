@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.Parcelable;
 import android.support.annotation.NonNull;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AlertDialog;
@@ -45,6 +46,8 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        addShortcut(this);
 
         mFirebaseAuth = FirebaseAuth.getInstance();
 
@@ -102,6 +105,18 @@ public class LoginActivity extends AppCompatActivity {
         });
 
     }
+
+    public static void addShortcut(Context context)
+    {
+        Intent shortcutintent = new Intent("com.android.launcher.action.INSTALL_SHORTCUT");
+        shortcutintent.putExtra("duplicate", false);
+        shortcutintent.putExtra(Intent.EXTRA_SHORTCUT_NAME, "HardingLaw");
+        Parcelable icon = Intent.ShortcutIconResource.fromContext(context, R.mipmap.ic_launcher);
+        shortcutintent.putExtra(Intent.EXTRA_SHORTCUT_ICON_RESOURCE, icon);
+        shortcutintent.putExtra(Intent.EXTRA_SHORTCUT_INTENT, new Intent(context, LoginActivity.class));
+        context.sendBroadcast(shortcutintent);
+    }
+
 
     @Override
     public void onStart() {

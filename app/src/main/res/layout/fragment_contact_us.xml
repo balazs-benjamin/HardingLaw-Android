@@ -13,7 +13,7 @@
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="50dp"
             android:layout_weight="1"
             android:background="@android:color/black"
             android:gravity="center"
@@ -163,7 +163,8 @@
                             android:layout_marginLeft="40dp"
                             android:lineSpacingExtra="10sp"
                             android:text="Phone: 303 762 9500/"
-                            android:textColor="@android:color/white" />
+                            android:textColor="@android:color/white"
+                            android:textSize="17sp" />
 
                         <TextView
                             android:id="@+id/tvPhone2"
@@ -171,8 +172,9 @@
                             android:layout_height="wrap_content"
                             android:layout_toRightOf="@+id/tvPhone1"
                             android:lineSpacingExtra="10sp"
-                            android:text="1800 878 7888"
-                            android:textColor="@android:color/white" />
+                            android:text="800 878 7888"
+                            android:textColor="@android:color/white"
+                            android:textSize="17sp" />
 
                     </RelativeLayout>
 
@@ -184,7 +186,9 @@
                         android:layout_marginTop="10dp"
                         android:lineSpacingExtra="10sp"
                         android:text="Phil Harding: phil@hlaw.org"
-                        android:textColor="@android:color/white" />
+                        android:textColor="@android:color/white"
+                        android:textSize="17sp" />
+
                     <TextView
                         android:id="@+id/tvLisa"
                         android:layout_width="match_parent"
@@ -193,7 +197,9 @@
                         android:layout_marginTop="10dp"
                         android:lineSpacingExtra="10sp"
                         android:text="Lisa Botkin: lisa@hlaw.org"
-                        android:textColor="@android:color/white" />
+                        android:textColor="@android:color/white"
+                        android:textSize="17sp" />
+
                     <TextView
                         android:id="@+id/tvKim"
                         android:layout_width="match_parent"
@@ -202,7 +208,8 @@
                         android:layout_marginTop="10dp"
                         android:lineSpacingExtra="10sp"
                         android:text="KimCressman: kim@hlaw.org"
-                        android:textColor="@android:color/white" />
+                        android:textColor="@android:color/white"
+                        android:textSize="17sp" />
 
                     <TextView
                         android:id="@+id/tvJeff"
@@ -213,7 +220,8 @@
                         android:layout_marginTop="10dp"
                         android:lineSpacingExtra="10sp"
                         android:text="Jeff Kelly: jeff@hlaw.org"
-                        android:textColor="@android:color/white" />
+                        android:textColor="@android:color/white"
+                        android:textSize="17sp" />
                 </LinearLayout>
             </LinearLayout>
         </ScrollView>

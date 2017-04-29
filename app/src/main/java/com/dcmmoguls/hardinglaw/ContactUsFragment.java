@@ -143,7 +143,7 @@ public class ContactUsFragment extends Fragment{
             @Override
             public void onClick(View v) {
                 Intent callIntent = new Intent(Intent.ACTION_DIAL);
-                callIntent.setData(Uri.parse("tel:13037629500"));
+                callIntent.setData(Uri.parse("tel:3037629500"));
                 startActivity(callIntent);
             }
         });
@@ -152,7 +152,7 @@ public class ContactUsFragment extends Fragment{
             @Override
             public void onClick(View v) {
                 Intent callIntent = new Intent(Intent.ACTION_DIAL);
-                callIntent.setData(Uri.parse("tel:18008787888"));
+                callIntent.setData(Uri.parse("tel:8008787888"));
                 startActivity(callIntent);
             }
         });

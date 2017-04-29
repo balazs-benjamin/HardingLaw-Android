@@ -284,7 +284,10 @@ public class MessagesActivity extends AppCompatActivity
             else
                 data.put("type", "notification");
             JSONObject contents = new JSONObject();
-            contents.put("en", sharedPref.getString("user_name", "") + ": " + text );
+            if(isChatting)
+                contents.put("en", sharedPref.getString("user_name", "") + ": " + text );
+            else
+                contents.put("en", text );
             payload.put("contents", contents);
             payload.put("content-available", 1);
             payload.put("data", data);

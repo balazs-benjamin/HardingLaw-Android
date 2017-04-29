@@ -762,7 +762,7 @@ public class NewInjuryActivity extends AppCompatActivity {
         }
 
 
-        Intent i = new Intent(Intent.ACTION_SEND);
+        Intent i = new Intent(Intent.ACTION_SENDTO);
         i.setType("message/rfc822");
         i.setData(Uri.parse("mailto:"));
         i.putExtra(Intent.EXTRA_EMAIL  , new String[]{"phil@hlaw.org", "lisa@hlaw.org", "kim@hlaw.org", "jeff@hlaw.org"});
